@@ -1,0 +1,51 @@
+.navbar-toggler {
+  background: #fadfc7;
+}
+main {
+  min-height: 80vh;
+  padding: 3%;
+  margin-top: 50px;
+}
+.w-60 {
+  width: 60%;
+}
+a {
+  text-decoration: none;
+}
+.card-title-text {
+  color: #353e66;
+}
+.topnav {
+  background-color: seashell;
+  box-shadow: 0 3px 5px -3px #d6a5a9;
+}
+.card-price {
+  color: #ff0885;
+}
+.card-mfr {
+  display: block;
+  height: 20px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+footer {
+  background: #a3778d;
+  color: white;
+}
+.rx-badge {
+  width: 15%;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  background: #ff399c;
+}
+.btn-cart {
+  background: #1e9799;
+}
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 160px;
+  }
+}
