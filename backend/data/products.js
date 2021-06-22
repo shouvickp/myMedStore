@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Calpol 650mg Tablet 15'S",
     genericName: "PARACETAMOL",
     image: "/images/calpol-650.png",
@@ -14,7 +13,6 @@ const products = [
     isRxRequired: false
   },
   {
-    _id: "2",
     name: "Crocin 650mg Tablet 15'S",
     genericName: "PARACETAMOL",
     image: "/images/crocin-650.jpg",
@@ -28,7 +26,6 @@ const products = [
     isRxRequired: false
   },
   {
-    _id: "3",
     name: "Azithral 500mg Tablet 5'S",
     genericName: "AZITHROMYCIN",
     image: "/images/azithral-500.png",
@@ -42,7 +39,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "4",
     name: "Azee 500mg Tablet 5'S",
     genericName: "AZITHROMYCIN",
     image: "/images/azee-500.jpg",
@@ -56,7 +52,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "5",
     name: "Ciplox 500mg Tablet 10'S",
     genericName: "CIPROFLOXACIN",
     image: "/images/ciplox-500.jpg",
@@ -70,7 +65,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "6",
     name: "Ciprokem 500mg Tablet 10'S",
     genericName: "CIPROFLOXACIN",
     image: "/images/tablets.jpg",
@@ -84,7 +78,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "7",
     name: "Montek LC Tablet 10'S",
     genericName: "LEVOCETIRIZINE 5MG + MONTELUKAST 10MG",
     image: "/images/montek-LC.png",
@@ -98,7 +91,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "8",
     name: "Infinair 5/10 mg Tablet 10'S",
     genericName: "LEVOCETIRIZINE 5MG + MONTELUKAST 10MG",
     image: "/images/infinair-5-10.jpg",
@@ -112,7 +104,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "9",
     name: "Razo D Capsule 15'S",
     genericName: "DOMPERIDONE SR 30 mg + RABEPRAZOLE SODIUM 20 mg",
     image: "/images/razo-d.png",
@@ -126,7 +117,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "10",
     name: "Ecorab D Capsule 10'S",
     genericName: "DOMPERIDONE SR 30 mg + RABEPRAZOLE SODIUM 20 mg",
     image: "/images/ecorab-d.jpg",
@@ -140,7 +130,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "11",
     name: "Roles D Capsule 10'S",
     genericName: "DOMPERIDONE SR 30 mg + RABEPRAZOLE SODIUM 20 mg",
     image: "/images/roles-d.jpg",
@@ -154,7 +143,6 @@ const products = [
     isRxRequired: true
   },
   {
-    _id: "12",
     name: "Complan Royale Chocolate Refill Pack 500 gm",
     genericName: "",
     image: "/images/complan.png",
@@ -168,7 +156,6 @@ const products = [
     isRxRequired: false
   },
   {
-    _id: "13",
     name: "3 Ply Mask Packet Of 50",
     genericName: "",
     image: "/images/mask.png",
@@ -182,7 +169,6 @@ const products = [
     isRxRequired: false
   },
   {
-    _id: "14",
     name: "Dettol pH Balanced Handwash - Skincare 175 ml",
     genericName: "",
     image: "/images/detol-handwash.png",
@@ -196,7 +182,6 @@ const products = [
     isRxRequired: false
   },
   {
-    _id: "15",
     name: "Veet Hair Removal Cream - Sensitive Skin 100 gm",
     genericName: "",
     image: "/images/veet.png",
@@ -210,7 +195,6 @@ const products = [
     isRxRequired: false
   },
   {
-    _id: "16",
     name: "Volini Pain Relief Spray Bottle Of 100 G",
     genericName: "",
     image: "/images/volini.png",
