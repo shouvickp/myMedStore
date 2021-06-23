@@ -25,7 +25,7 @@ const Header = () => {
           </Navbar.Brand>
         </LinkContainer>
         <form className="mt-1 d-none d-lg-flex w-60">
-          <div class="input-group input-group-lg mb-1">
+          <div className="input-group input-group-lg mb-1">
             <input
               type="Search"
               className="form-control"
@@ -60,7 +60,7 @@ const Header = () => {
 
         <div className="col-12 d-block d-md-none">
           <form>
-            <div class="input-group mb-3">
+            <div className="input-group mb-3">
               <input
                 type="Search"
                 className="form-control"
