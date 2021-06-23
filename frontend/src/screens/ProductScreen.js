@@ -11,17 +11,26 @@ import {
   Container
 } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import Product from "../components/Product";
 
 const ProductScreen = ({ match }) => {
 
   const  [product, setProduct] = useState([]);
+  const  [alternateProducts, setAlternateProducts] = useState([]);
 
   useEffect(()=>{
     const fetchProduct = async ()=>{
       const {data} = await axios.get(`/api/products/${match.params.id}`);
       setProduct(data);
     }
+
+    const fetchAlternateProducts = async ()=>{
+      const {data} = await axios.get(`/api/products/alternate/${match.params.id}`);
+      setAlternateProducts(data);
+    }
+
     fetchProduct();
+    fetchAlternateProducts();
   }, []);
 
   const Badges = ({ value, text }) => {
@@ -41,7 +50,7 @@ const ProductScreen = ({ match }) => {
         <LinkContainer to="/">
           <Breadcrumb.Item>Home</Breadcrumb.Item>
         </LinkContainer>
-        <Breadcrumb.Item active> product /</Breadcrumb.Item>
+        <Breadcrumb.Item active> product / {product.name}</Breadcrumb.Item>
       </Breadcrumb>
       <Row>
         <Col md={6}>
@@ -98,6 +107,16 @@ const ProductScreen = ({ match }) => {
             </ListGroup.Item>
           </ListGroup>
         </Col>
+      </Row>
+      <Row>
+        <h3 className="mb-3 text-secondary">
+          {product.category === "Medicine" ? "Alternate Medicines" : "Products you may also buy"}
+        </h3>
+        {alternateProducts.map((product) => (
+            <Col xs={10} sm={4} md={3} lg={2} xl={2} className="mb-3">
+              <Product product={product} />
+            </Col>
+          ))}
       </Row>
     </Container>
   );

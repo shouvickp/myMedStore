@@ -14,6 +14,9 @@ const productSchema = mongoose.Schema(
       genericName: {
         type: String,
       },
+      category: {
+        type: String,
+      },
       image: {
         type: String,
         required: true,

@@ -26,4 +26,18 @@ router.get('/:id', asyncHandler( async (req,res) =>{
     }
 }))
 
+// @desc    Fetch single product
+// @route   GET /api/products/alternate/:id/:genericName
+// @access  Public
+router.get('/alternate/:id', asyncHandler( async (req,res) =>{
+    const product = await Product.findById(req.params.id)
+    if(product){
+        const alternateProducts = await Product.find({
+            "_id" : { $ne: product.id },
+            "genericName": product.genericName
+        })
+        res.json(alternateProducts)
+    }
+}))
+
 export default router
