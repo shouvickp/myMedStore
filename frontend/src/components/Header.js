@@ -21,11 +21,11 @@ const Header = () => {
       >
         <LinkContainer to="/">
           <Navbar.Brand>
-            <Image src="/images/logo.svg" width="70" />
+            <Image src="/images/logo.svg" width="50" />
           </Navbar.Brand>
         </LinkContainer>
         <form className="mt-1 d-none d-lg-flex w-60">
-          <div className="input-group input-group-lg mb-1">
+          <div className="input-group input-group-sm mb-1">
             <input
               type="Search"
               className="form-control"
